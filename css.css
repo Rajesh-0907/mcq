@@ -6,6 +6,9 @@
 body {
 	height: 100vh;
 	background-color: gray;
+	background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5V4R1GLjWm8%2Fmaxresdefault.jpg&f=1&nofb=1);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 header {
 	width: 100%;
