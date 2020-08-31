@@ -1,0 +1,136 @@
+* {
+	user-select: none;
+	font-family: sans-serif;
+}
+
+body {
+	height: 100vh;
+	background-color: gray;
+	background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5V4R1GLjWm8%2Fmaxresdefault.jpg&f=1&nofb=1);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+header {
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	padding: 30px;
+	padding-top: 0px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+input[type='radio']:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #d1d3d1;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+input[type='radio']:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: darkmagenta;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+#submi {
+	width: 100%;
+}
+#time {
+	font-size: 50px;
+}
+#sub {
+	float: right;
+}
+#radio {
+	width: 210px;
+	height: 500px;
+	border: 1px solid black;
+	background-color: slategrey;
+	padding: 10px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 20%;
+	border-radius: 10px;
+}
+
+input {
+	margin: 15px;
+	margin-left: 2px;
+}
+
+#submit {
+	width: 100%;
+	text-align: center;
+}
+#container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 1000px;
+	height: 600px;
+	background-color: azure;
+	padding: 20px;
+	text-align: justify;
+	font-size: large;
+	border: 4px solid gray;
+	box-sizing: border-box;
+	display: none;
+}
+
+#answers {
+	margin: 20px;
+	display: inline-flexbox;
+}
+
+button {
+	font-size: 14px;
+}
+
+#buttons {
+	width: 100%;
+}
+
+#next {
+	float: right;
+}
+
+#result {
+	position: relative;
+	top: 30px;
+	text-align: center;
+}
+
+#name {
+	box-sizing: border-box;
+	padding: 20px;
+	float: right;
+	position: relative;
+	border-radius: 20px;
+	top: 10%;
+	width: 250px;
+	height: 200px;
+	background-color: azure;
+	text-align: center;
+}
+#name input {
+	width: 200px;
+	height: 40px;
+	font-size: 20px;
+}
