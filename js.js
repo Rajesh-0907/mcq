@@ -469,19 +469,6 @@ var lists = [
 	}
 ];
 
-lists[0].five = 90;
-console.log(lists[0].five);
-function shuffle(a) {
-	var j, x, i;
-	for (i = a.length - 1; i > 0; i--) {
-		j = Math.floor(Math.random() * (i + 1));
-		x = a[i];
-		a[i] = a[j];
-		a[j] = x;
-	}
-	return a;
-}
-shuffle(lists);
 question.innerHTML = lists[0].question;
 one.innerHTML = lists[0].one;
 two.innerHTML = lists[0].two;
