@@ -1,4 +1,5 @@
 var question = document.getElementById('questions');
+var answers = document.getElementById('answers');
 var one = document.getElementById('one');
 var two = document.getElementById('two');
 var three = document.getElementById('three');
@@ -12,6 +13,9 @@ var res = document.getElementById('res');
 var feed = document.getElementById('feedback');
 var nam = document.getElementById('nam');
 var sub = document.getElementById('sub');
+var Next = document.getElementById('next');
+var Previous = document.getElementById('previous');
+var subm = document.getElementById('submit');
 var i = 0;
 var j;
 var sum = 0;
@@ -23,6 +27,13 @@ function result() {
 	++sum1;
 	if (sum1 == 1) {
 		sub.style.display = 'none';
+		question.style.display = 'none';
+		answers.style.display = 'none';
+		cont.style.border = 'none';
+		Next.style.display = 'none';
+		Previous.style.display = 'none';
+		subm.style.display = 'none';
+
 		for (j = 0; j < 10; j++) {
 			sum = sum + lists[j].score;
 		}
@@ -56,6 +67,7 @@ function update(id) {
 					lists[i].check1 = 1;
 					lists[i].col = 'red';
 					lists[i].bor = '4px solid red';
+					lists[i].check2 += 1;
 				}
 				break;
 			case 2:
@@ -73,6 +85,7 @@ function update(id) {
 					lists[i].check1 = 1;
 					lists[i].col = 'red';
 					lists[i].bor = '4px solid red';
+					lists[i].check2 += 1;
 				}
 				break;
 			case 3:
@@ -90,6 +103,7 @@ function update(id) {
 					lists[i].check1 = 1;
 					lists[i].col = 'red';
 					lists[i].bor = '4px solid red';
+					lists[i].check2 += 1;
 				}
 				break;
 			case 4:
@@ -107,6 +121,7 @@ function update(id) {
 					lists[i].check1 = 1;
 					lists[i].col = 'red';
 					lists[i].bor = '4px solid red';
+					lists[i].check2 += 1;
 				}
 				break;
 			case 5:
@@ -124,6 +139,7 @@ function update(id) {
 					lists[i].check1 = 1;
 					lists[i].col = 'red';
 					lists[i].bor = '4px solid red';
+					lists[i].check2 += 1;
 				}
 				break;
 			case 6:
@@ -141,6 +157,7 @@ function update(id) {
 					lists[i].check1 = 1;
 					lists[i].col = 'red';
 					lists[i].bor = '4px solid red';
+					lists[i].check2 += 1;
 				}
 				break;
 			case 7:
@@ -158,6 +175,7 @@ function update(id) {
 					lists[i].check1 = 1;
 					lists[i].col = 'red';
 					lists[i].bor = '4px solid red';
+					lists[i].check2 += 1;
 				}
 				break;
 			case 8:
@@ -175,6 +193,7 @@ function update(id) {
 					lists[i].check1 = 1;
 					lists[i].col = 'red';
 					lists[i].bor = '4px solid red';
+					lists[i].check2 += 1;
 				}
 				break;
 			case 9:
@@ -192,6 +211,7 @@ function update(id) {
 					lists[i].check1 = 1;
 					lists[i].col = 'red';
 					lists[i].bor = '4px solid red';
+					lists[i].check2 += 1;
 				}
 				break;
 			case 10:
@@ -208,6 +228,7 @@ function update(id) {
 					lists[i].check1 = 1;
 					lists[i].col = 'red';
 					lists[i].bor = '4px solid red';
+					lists[i].check2 += 1;
 					lists[i].check2 += 1;
 				}
 				break;
