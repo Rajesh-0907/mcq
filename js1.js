@@ -25,6 +25,7 @@ var ac = document.getElementById('ac');
 var prev = document.getElementById('previous');
 var nxt = document.getElementById('next');
 var d = new Date();
+var star = document.getElementById('start');
 
 var interval;
 var i = 0;
@@ -53,6 +54,7 @@ function start() {
 		interval = window.setInterval(countdown, 1000);
 		cont.style.display = 'inline';
 		arr[0].checked = true;
+		star.style.display = 'none';
 	}
 }
 
