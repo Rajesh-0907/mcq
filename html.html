@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+      
+        <h1>Multiple Choice Questions</h1>
+        <p>Based on covid 19 scenerio</p>
+        
+    </header>
+ 
+   
+    <div id="container">
+       <div id="questions">
+          
+       </div>
+       <hr>
+       <div id="answers">
+        a)<input type="radio" name="answer" id="onee" onclick="check(onee)"><span id="one">rajesh</span><br>
+        b)<input type="radio" name="answer" id="twoo" onclick="check(twoo)"><span id="two">raj</span><br>
+        c)<input type="radio" name="answer" id="threee" onclick="check(threee)"><span id="three">ra</span><br>
+        d)<input type="radio" name="answer" id="fourr" onclick="check(fourr)"><span id="four">raje</span><br>
+        </div>
+    
+        <div id="submit">
+            <button id="sub" onclick="update(lists[i].id)">Confirm Answer</button>
+        </div><br>
+        <hr>
+       <div id="buttons">
+         <button id="previous" onclick="previous()">previous question</button>
+         <button id="next" onclick="next()">next question</button>
+       </div>
+
+       <hr>
+       <div id="submit">
+           <button  onclick="result()">submit</button>
+       </div>
+       <div id="result">
+        <span id="res"></span><br>
+        <span id="feedback"></span>
+
+    </div>
+    </div>
+   
+
+    <script src="js.js"></script>
+  
+</body>
+</html>
